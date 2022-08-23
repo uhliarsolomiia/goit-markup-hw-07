@@ -1,0 +1,14 @@
+.image-box {
+  box-sizing: border-box;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background);
+  border-radius: 4px;
+  @include align-list;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.image-box__icons {
+  width: 70px;
+  height: 70px;
+}

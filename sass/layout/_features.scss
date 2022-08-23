@@ -1,0 +1,10 @@
+.features__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.features-list__items {
+  flex-basis: calc(100% / 3);
+}

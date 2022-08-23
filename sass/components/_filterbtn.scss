@@ -1,0 +1,39 @@
+.filter-list {
+  margin-top: 0;
+  gap: 8px;
+  margin-bottom: 50px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-list__btn {
+  background-color: $background-site;
+  @include font(16px, 1.62, 500, 0.03em);
+  font-family: inherit;
+  font-style: normal;
+  text-align: center;
+  color: $title-color;
+  cursor: pointer;
+  margin-left: auto;
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  @include padding(22px, 6px, 22px, 6px);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent;
+    color: $background-site;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.filter-list__btn--active {
+  background-color: $accent;
+  color: $background-site;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

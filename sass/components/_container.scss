@@ -1,0 +1,6 @@
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  @include padding(15px, null, 15px, null);
+}
