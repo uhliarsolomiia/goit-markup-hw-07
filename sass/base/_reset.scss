@@ -8,13 +8,14 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: var(--background-site);
+  background-color: $background-site;
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
   margin: 0;
 }
 
 header {
-  background-color: var(--background-site);
+  background-color: $background-site;
   border-bottom: 1px solid #ececee;
 }
 
@@ -27,11 +28,12 @@ ul {
   list-style: none;
 }
 input {
-  color: var(--secondary-text-color);
+  color: $title-color;
 }
 footer {
-  background-color: var(--background-color-hero);
-  @include padding(null, 50px, null, 50px);
+  background-color: $background-hero;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 address {
   margin-top: 20px;

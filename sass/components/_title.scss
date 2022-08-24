@@ -1,7 +1,10 @@
 .title {
-  @include font(36px, 1.17, 700, 0.03em);
+  font-size: 36px;
+  line-height: 1.17;
+  font-weight: 700;
+  letter-spacing: 0.03em;
   text-align: center;
-  color: var(--title-text-color);
+  color: $title-color;
   padding-bottom: 50px;
   margin: 0;
 }

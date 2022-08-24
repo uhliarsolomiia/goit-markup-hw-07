@@ -1,7 +1,7 @@
 .soc-networks {
   padding: 0;
   margin-top: 16px;
-  @include align-list;
+  @extend %aling-list;
 
   justify-content: center;
   gap: 10px;
@@ -11,13 +11,13 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  @include align-list;
-  background-color: var(--background-color);
+  @extend %aling-list;
+  background-color: $background-site;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: var(--accent);
+    background-color: $accent;
   }
 }
 
@@ -26,7 +26,7 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .soc-networks__link:hover &,
   .soc-networks__link:focus & {
-    fill: var(--background-color);
+    fill: $background-site;
   }
 }
 

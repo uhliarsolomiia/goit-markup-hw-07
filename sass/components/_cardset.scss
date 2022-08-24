@@ -25,7 +25,10 @@
 }
 
 .card-set__meta {
-  @include padding(24px, 20px, 24px, 20px);
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
   border: 1px solid $border-color;
   border-top: none;
 }
@@ -37,7 +40,9 @@
 }
 
 .card-set__text {
-  @include font(16px, 1.87, null, 0.03em);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
   color: $text-color;
   text-decoration: none;
   margin: 0;

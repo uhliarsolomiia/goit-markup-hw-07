@@ -9,27 +9,35 @@
 }
 
 .address-list {
-  font-style: normal;
   margin-top: 0;
   padding: 0;
   margin-bottom: 0;
+  font-style: normal;
 }
 .address-list__item {
   margin-bottom: 9px;
 }
-
 .address-list__link {
-  @include font(14px, 1.71, 400, 0.03em);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   text-decoration: none;
-  color: #ffffff;
+  color: $background-site;
 }
+
 .address-list__contacts {
-  @include font(14px, 1.71, 400, 0.03em);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--adress-color);
+  margin-bottom: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $adress-color;
   &:hover,
   &:focus {
-    color: #2196f3;
+    color: $accent;
   }
 }
 
@@ -46,9 +54,12 @@
 }
 
 .join__title {
-  @include font(14px, 1.14, 700, 0.03em);
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: white;
+  color: $background-site;
   display: flex;
   margin-bottom: 20px;
   margin-top: 0;
@@ -72,16 +83,19 @@
   outline: none;
   padding-left: 16px;
   &:focus {
-    border-color: var(--accent);
+    border-color: $accent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .mailing-form__label {
   width: 358px;
   margin-bottom: 20px;
-  @include font(14px, 1.14, 700, 0.03em);
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--background-color);
+  color: $background-site;
 }
 .mailing-form__btn {
   width: 200px;
@@ -89,13 +103,18 @@
   margin: auto;
   margin-left: 12px;
   border-radius: 4px;
-  background: var(--accent);
-  border: var(--accent);
-  @include font(16px, 1.87, 700, null);
-  @include align-list;
+  background: $accent;
+  border: $accent;
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  @extend %aling-list;
   letter-spacing: 0.06em;
-  color: var(--background-color);
-  @include padding (29px, 10px, 9px, 10px);
+  color: $background-site;
+  padding-left: 29px;
+  padding-top: 10px;
+  padding-right: 9px;
+  padding-bottom: 10px;
 }
 
 .mailing {

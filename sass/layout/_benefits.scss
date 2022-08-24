@@ -10,7 +10,34 @@
 }
 
 .benefits-list__text {
-  color: var(--secondary-text-color);
-  @include font(14px, 1.71, null, 0.03em);
+  color: $title-color;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   margin: 0;
+}
+.benefits-list__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-color;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.image-box {
+  box-sizing: border-box;
+  width: 270px;
+  height: 120px;
+  background-color: $background-section;
+  border-radius: 4px;
+  @extend %aling-list;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.image-box__icons {
+  width: 70px;
+  height: 70px;
 }

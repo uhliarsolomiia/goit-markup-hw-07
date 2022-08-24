@@ -1,5 +1,5 @@
 .team {
-  background-color: var(--background);
+  background-color: $background-section;
 }
 
 .team__list {
@@ -13,26 +13,34 @@
   flex-basis: calc(100% / 4);
   border-bottom: 1px solid #afb1b8;
   border-radius: 4px;
-  background: var(--background);
+  background: $background-site;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: #ffffff;
+  background-color: $background-site;
 }
 
 .team-members {
-  @include padding(10px, 30px, 10px, 30px);
+  padding-left: 10px;
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-bottom: 30px;
   align-items: center;
 }
 .team-members__name {
-  color: var(--title-text-color);
-  @include font(16px, 1.18, 500, 0.03em);
+  color: $title-color;
+  font-size: 16px;
+  line-height: 1.18;
+  font-weight: 500;
+  letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 10px;
   margin-top: auto;
 }
 
 .team-members__position {
-  color: var(--secondary-text-color);
-  @include font(16px, 1.18, null, 0.03em);
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
   text-align: center;
   margin: 0;
 }

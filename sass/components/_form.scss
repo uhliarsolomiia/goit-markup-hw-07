@@ -1,7 +1,7 @@
 .form-group {
   position: relative;
   flex-direction: column;
-  @include align-list;
+  @extend %aling-list;
   justify-content: center;
 }
 
@@ -34,7 +34,9 @@
 }
 
 .form-group__label {
-  @include font(12px, null, 400, 0.01em);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
   margin-bottom: 10px;
   color: $title-color;
 }
@@ -47,14 +49,20 @@
 .form-area__text {
   width: 448px;
   margin: 0;
-  @include padding(16px, 12px, 16px, 12px);
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   height: 120px;
   resize: none;
   outline: none;
   color: rgba(117, 117, 117, 0.5);
-  @include font(14px, 1, 400, 0.01em);
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0.01em;
   &:focus {
     border-color: $accent;
   }
@@ -64,7 +72,10 @@
 }
 
 .form-area__label {
-  @include font(12px, 1.16, 400, 0.01em);
+  font-size: 12px;
+  line-height: 1.16;
+  font-weight: 400;
+  letter-spacing: 0.01em;
   color: $title-color;
 }
 
@@ -79,7 +90,10 @@
   background: $accent;
   border: $adress-color;
   border-radius: 4px;
-  @include font(16px, 1.87, 700, 0.06em);
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   text-align: center;
 
   color: $background-site;
@@ -87,15 +101,18 @@
 }
 
 .form-check_label {
-  @include align-list;
+  @extend %aling-list;
   justify-content: center;
-  @include font(14px, 1.71, 400, 0.03em);
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   color: $title-color;
   margin-top: 20px;
 }
 
 .checkbox {
-  @include align-list;
+  @extend %aling-list;
   justify-content: center;
   border: 2px solid $primary-title-color;
   border-radius: 4px;
@@ -125,5 +142,5 @@
 }
 
 .checkbox__icon {
-  fill: var(--background-color);
+  fill: $background-site;
 }

@@ -7,7 +7,7 @@
 .company-list__logo {
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  @include align-list;
+  @extend %aling-list;
   width: 170px;
   height: 92px;
   justify-content: center;
